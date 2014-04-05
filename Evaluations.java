@@ -25,12 +25,12 @@ public class Evaluations
     {
         if(top==size-1)
         {
-            Calc.t2.setText("Out of Memory !!!");
-            Calc.cond=2;
+            Calculator.t2.setText("Out of Memory !!!");
+            Calculator.cond=2;
         }
         else
         {
-            Calc.cond=1;
+            Calculator.cond=1;
             arr[++top]=item;
         }
     }
@@ -39,12 +39,12 @@ public class Evaluations
     {
         if(topd==size-1)
         {
-            Calc.t2.setText("Out of Memory !!!");
-            Calc.cond=2;
+            Calculator.t2.setText("Out of Memory !!!");
+            Calculator.cond=2;
         }
         else
         {
-            Calc.cond=1;
+            Calculator.cond=1;
             eval[++topd]=item;
         }
     }
@@ -54,14 +54,14 @@ public class Evaluations
         char c;
         if(top==-1)
         {
-            Calc.t2.setText("Error");
-            Calc.cond=2;
+            Calculator.t2.setText("Error");
+            Calculator.cond=2;
             return 0;
         }
         else
 
         {
-            Calc.cond=1;
+            Calculator.cond=1;
             c=arr[top];
             arr[top--]=' ';
             return c;
@@ -72,13 +72,13 @@ public class Evaluations
     {
         if(topd==-1)
         {
-            Calc.t2.setText("Error");
-            Calc.cond=2;
+            Calculator.t2.setText("Error");
+            Calculator.cond=2;
             return 0;
         }
         else
         {
-            Calc.cond=1;
+            Calculator.cond=1;
             return eval[topd--];
         }
     }
@@ -278,7 +278,7 @@ public class Evaluations
                 break;
                 case '#':
                 x=pop(h);
-                if(Calc.deg==2){
+                if(Calculator.deg==2){
                     push(Math.sin(Math.toRadians(x)));
                 }
                 else
@@ -286,7 +286,7 @@ public class Evaluations
                 break;
                 case '~':
                 x=pop(h);
-                if(Calc.deg==2){
+                if(Calculator.deg==2){
                     push(Math.cos(Math.toRadians(x)));
                 }
                 else
@@ -294,7 +294,7 @@ public class Evaluations
                 break;
                 case '@':
                 x=pop(h);
-                if(Calc.deg==2){
+                if(Calculator.deg==2){
                     push(Math.tan(Math.toRadians(x)));
                 }
                 else
@@ -306,7 +306,7 @@ public class Evaluations
                 break;
                 case '%':
                 x=pop(h);
-                if(Calc.deg==2){
+                if(Calculator.deg==2){
                     push(Math.toDegrees(Math.asin(x)));
                 }
                 else
@@ -314,7 +314,7 @@ public class Evaluations
                 break;
                 case ';':
                 x=pop(h);
-                if(Calc.deg==2){
+                if(Calculator.deg==2){
                     push(Math.toDegrees(Math.acos(x)));
                 }
                 else
@@ -322,7 +322,7 @@ public class Evaluations
                 break;
                 case ':':
                 x=pop(h);
-                if(Calc.deg==2){
+                if(Calculator.deg==2){
                     push(Math.toDegrees(Math.atan(x)));
                 }
                 else

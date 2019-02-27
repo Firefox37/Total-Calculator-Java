@@ -153,9 +153,10 @@ public class Calculator extends JFrame implements ActionListener, ItemListener
         y=y-h;
         j1.setBounds(2,10,l,b);     j2.setBounds(2,110,l,b);
 
-        t1.setBackground(Color.WHITE);  t2.setBackground(Color.WHITE);  
-        c1.setForeground(Color.black);  c2.setForeground(Color.black);  c.setBackground(Color.white);
+        //t1.setBackground(Color.WHITE);  t2.setBackground(Color.WHITE);  
+        c1.setForeground(Color.black);  c2.setForeground(Color.black);  //c.setBackground(Color.white);
 
+        setLocationRelativeTo(null);
         setVisible(true);
         validate();
     }
